@@ -1,1 +1,33 @@
 
+body {
+  background-color: #ffffff;
+}
+
+header {
+  background: linear-gradient(to bottom, #368dfc, #9cf);
+  padding: 10px 5px;
+  margin: 10px 0;
+}
+
+.bandeau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.right a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold; /* lien en gras */
+}
+
+.bandeau .home img,
+.bandeau .connexion img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px; /* Espacement entre l'image et le texte */
+}
