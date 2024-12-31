@@ -1,4 +1,3 @@
-
 body {
   background-color: #ffffff;
 }
@@ -28,9 +27,14 @@ header {
   font-weight: bold; /* lien en gras */
 }
 
-.bandeau .home img,
+.bandeau .home img {
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%;
+}
 .bandeau .connexion img {
   width: 30px;
   height: 30px;
-  margin-right: 8px; /* Espacement entre l'image et le texte */
+  margin-right: 8px;
 }
