@@ -1,0 +1,85 @@
+body {
+  background-color: #ffffff;
+}
+
+header {
+  background: linear-gradient(to bottom, #368dfc, #9cf);
+  padding: 10px 5px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.bandeau {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.right a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: inline-flex;
+  align-items: center;
+  margin-left: 30px;
+  font-weight: bold; /* lien en gras */
+}
+
+.bandeau .home img {
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%;
+}
+.bandeau .connexion img,
+.bandeau .avis img,
+.bandeau .partenaire img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+< p em {
+  color: #555;
+  line-height: 1.6;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.lien {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Ajoute un espacement entre les liens */
+  align-items: center;
+}
+
+.amazon a,
+.KFC a,
+.temu a {
+  display: flex;
+  flex-direction: column; /* Aligne l'image et le texte en colonne à l'intérieur de chaque lien */
+  justify-content: center; /* Centre le contenu de chaque lien */
+  align-items: center; /* Centre l'image et le texte horizontalement */
+  text-align: center; /* Centre le texte sous l'image */
+  width: 100px; /* Largeur des éléments */
+}
+
+.amazon img,
+.KFC img,
+.temu img {
+  width: 80%; /* L'image prend toute la largeur de l'élément */
+  height: auto; /* Maintient les proportions de l'image */
+  margin-bottom: 10px; /* Espacement entre l'image et le texte */
+}
+
+.amazon p,
+.KFC p,
+.temu p {
+  color: black;
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold;
+}
