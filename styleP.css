@@ -9,6 +9,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
+  margin-bottom: 20px;
 }
 
 .bandeau {
@@ -41,19 +42,27 @@ header {
   margin-right: 8px;
 }
 
-< p em {
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+p em {
   color: #555;
   line-height: 1.6;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 20px;
+  position: absolute;
+  bottom: 10px; /* Espace depuis le bas de la page */
+  right: 10px;
 }
 
 .lien {
   display: flex;
   justify-content: center;
-  gap: 20px; /* Ajoute un espacement entre les liens */
   align-items: center;
 }
 
@@ -61,25 +70,59 @@ header {
 .KFC a,
 .temu a {
   display: flex;
-  flex-direction: column; /* Aligne l'image et le texte en colonne à l'intérieur de chaque lien */
-  justify-content: center; /* Centre le contenu de chaque lien */
-  align-items: center; /* Centre l'image et le texte horizontalement */
-  text-align: center; /* Centre le texte sous l'image */
-  width: 100px; /* Largeur des éléments */
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
+  width: 100 px; 
 }
 
 .amazon img,
 .KFC img,
 .temu img {
+  margin-left: 60px;
+  margin-right: 10px;
   width: 80%; /* L'image prend toute la largeur de l'élément */
   height: auto; /* Maintient les proportions de l'image */
-  margin-bottom: 10px; /* Espacement entre l'image et le texte */
+  margin-bottom: 5px; /* Espacement entre l'image et le texte */
+  border-radius: 5px;
 }
 
 .amazon p,
 .KFC p,
 .temu p {
+  margin-left: 10px;
+  margin-right: 10px;
   color: black;
-  text-decoration: none; /* Supprime le soulignement */
   font-weight: bold;
+}
+
+.amazon h1,
+.KFC h1,
+.temu h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+
+.hamburger-menu {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #d3d3d3;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.hamburger-menu .line {
+  width: 100%;
+  height: 5px;
+  background-color: #555;
+  border-radius: 2px;
 }
