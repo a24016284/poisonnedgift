@@ -1,45 +1,46 @@
 body {
-  background-color: #ffffff;
+  background: #fff;
+  font-family: "Nunito", sans-serif;
 }
 
 header {
-  background: linear-gradient(to bottom, #368dfc, #9cf);
-  padding: 10px 5px;
-  width: 100%;
+  background: linear-gradient ( tobottom, #368dfc, #9cf);
+  padding: 10 px 5 px;
+  width: 100 %;
   position: absolute;
   top: 0;
   left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 20 px;
 }
 
 .bandeau {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 20 px;
 }
 
 .right a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb (0, 0, 0);
   display: inline-flex;
   align-items: center;
-  margin-left: 30px;
+  margin-left: 30 px;
   font-weight: bold; /* lien en gras */
 }
 
 .bandeau .home img {
   top: 0;
   left: 0;
-  width: 30%;
-  height: 30%;
+  width: 30 %;
+  height: 30 %;
 }
 .bandeau .connexion img,
 .bandeau .avis img,
 .bandeau .partenaire img {
-  width: 30px;
-  height: 30px;
-  margin-right: 8px;
+  width: 30 px;
+  height: 30 px;
+  margin-right: 8 px;
 }
 
 a {
@@ -47,17 +48,18 @@ a {
 }
 
 h1 {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 100 px;
+  margin-bottom: 50 px;
   text-align: center;
 }
 
 p em {
   color: #555;
   line-height: 1.6;
-  position: absolute;
-  bottom: 10px; /* Espace depuis le bas de la page */
-  right: 10px;
+  margin-left: 60 px;
+  margin-left: 10 px;
+  display: flex;
+  justify-content: right;
 }
 
 .lien {
@@ -70,29 +72,31 @@ p em {
 .KFC a,
 .temu a {
   display: flex;
-  flex-direction: column; 
-  justify-content: center; 
-  align-items: center;
-  text-align: center; 
-  width: 100 px; 
+  flex-direction: column; /* Aligne l'image et le texte en colonne à l'intérieur de chaque lien */
+  justify-content: center; /* Centre le contenu de chaque lien */
+  align-items: center; /* Centre l'image et le texte horizontalement */
+  text-align: center; /* Centre le texte sous l'image */
+  width: 100 px; /* Largeur des éléments */
 }
 
 .amazon img,
 .KFC img,
 .temu img {
-  margin-left: 60px;
-  margin-right: 10px;
-  width: 80%; /* L'image prend toute la largeur de l'élément */
+  margin-left: 40 px;
+  margin-right: 10 px;
+  width: 80 %; /* L'image prend toute la largeur de l'élément */
   height: auto; /* Maintient les proportions de l'image */
-  margin-bottom: 5px; /* Espacement entre l'image et le texte */
-  border-radius: 5px;
+  margin-bottom: 5 px; /* Espacement entre l'image et le texte */
+  border-radius: 5 px;
+  justify-content: center;
+  display: flex;
 }
 
 .amazon p,
 .KFC p,
 .temu p {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 10 px;
+  margin-right: 10 px;
   color: black;
   font-weight: bold;
 }
@@ -100,29 +104,29 @@ p em {
 .amazon h1,
 .KFC h1,
 .temu h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: black;
+  margin-top: 10 px;
+  margin-bottom: 10 px;
+  color: rgb (0, 0, 0);
   font-weight: bold;
 }
 
 .hamburger-menu {
   margin-top: 90 px;
   margin-bottom: 50 px;
-  width: 40px;
-  height: 30px;
+  width: 40 px;
+  height: 30 px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   background-color: #d3d3d3;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 5 px;
+  border-radius: 5 px;
 }
 
 .hamburger-menu .line {
-  width: 100%;
-  height: 5px;
+  width: 100 %;
+  height: 5 px;
   background-color: #555;
-  border-radius: 2px;
+  border-radius: 2 px;
 }
