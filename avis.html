@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,24 +6,59 @@
     <!-- Pour le responsive design sur mobile -->
     <title>Poisonned gift</title>
     <link rel="icon" href="favicon.ico" />
-    <link rel="icon" type="image/png" href="logo.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="image/logo.png" />
+    <link rel="stylesheet" href="styleA.css" />
   </head>
   <body>
     <header>
       <nav class="bandeau">
         <a href="index.html" class="home">
-          <img src="home.jpg" alt="Home" />
+          <img src="image/home.png" alt="Home" />
         </a>
         <div class="right">
-          <a href="partenaire.html" class="partenaire">Partenaire</a>
-          <a href="avis.html" class="avis">Avis utilisateur</a>
+          <a href="partenaire.html" class="partenaire">
+            <img src="image/main.png" alt="partenaire" />Partenaire
+          </a>
+          <a href="avis.html" class="avis">
+            <img src="image/avis.png" alt="avis" />Avis utilisateur
+          </a>
           <a href="connexion.html" class="connexion">
-            <img src="connexion.jpg" alt="Connexion" />
+            <img src="image/connexion.png" alt="Connexion" />
             Connexion
           </a>
+          <img src="image/menu-btn.png" alt="menu hamburger" class="menu-hamburger" />
+        </div>
+      </nav>
+      
+     
+
+      <nav class="navigation">
+        <div class="nav-links">
+          <a href="achat/achat1.html" class="active">Categorie1</a>
+          <a href="achat/achat2.html">Categorie2</a>
+          <div class="line"></div>
+          <a href="achat/achat3.html">Categorie3</a>
+          <div class="line"></div>
+          <a href="achat/achat4.html">Categorie4</a>
+          <div class="line"></div>
+          <a href="achat/achat5.html">Categorie5</a>
         </div>
       </nav>
     </header>
-  </body>
+
+   
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+    
+      // Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
+      menuHamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    
+      // Cacher le menu lorsque la souris quitte la zone du menu
+      navLinks.addEventListener("mouseleave", () => {
+        navLinks.classList.remove("mobile-menu");
+      });
+    </script>
 </html>
