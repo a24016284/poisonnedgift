@@ -24,16 +24,41 @@
             <img src="image/connexion.png" alt="Connexion" />
             Connexion
           </a>
+          <img src="image/menu-btn.png" alt="menu hamburger" class="menu-hamburger" />
+        </div>
+      </nav>
+      
+     
+
+      <nav class="navigation">
+        <div class="nav-links">
+          <a href="achat/achat1.html" class="active">Categorie1</a>
+          <a href="achat/achat2.html">Categorie2</a>
+          <div class="line"></div>
+          <a href="achat/achat3.html">Categorie3</a>
+          <div class="line"></div>
+          <a href="achat/achat4.html">Categorie4</a>
+          <div class="line"></div>
+          <a href="achat/achat5.html">Categorie5</a>
         </div>
       </nav>
     </header>
 
-    <div class="hamburger-menu" id="hamburger-menu" onclick="toggleMenu()">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-
+   
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+    
+      // Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
+      menuHamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+    
+      // Cacher le menu lorsque la souris quitte la zone du menu
+      navLinks.addEventListener("mouseleave", () => {
+        navLinks.classList.remove("mobile-menu");
+      });
+    </script>
     <div class="search-bar">
       <input type="text" placeholder="Rechercher..." id="search-input" />
     </div>
