@@ -1,16 +1,34 @@
+:root {
+  --fond: #fff;
+  --fond-light: #fff;
+  --fond-night: #2d2d2d;
+
+  --header-up: #368dfc;
+  --header-down: #9cf;
+  --header-up-light: #368dfc;
+  --header-down-light: #9cf;
+  --header-up-night: #fd494d;
+  --header-down-night: #9b0a0a;
+
+  --texte: #000;
+  --texte-light: #000;
+  --texte-night: #fff;
+}
+
 body {
-  background: #fff;
+  background: var(--fond);
   overflow: hidden;
   font-family: "Nunito", sans-serif;
 }
 
 header {
-  background: linear-gradient(to bottom, #368dfc, #9cf);
+  background: linear-gradient(to bottom, var(--header-up), var(--header-down));
   padding: 10px 5px;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  margin-bottom: 20px;
 }
 
 .bandeau {
@@ -22,7 +40,7 @@ header {
 
 .right a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--texte);
   display: inline-flex;
   align-items: center;
   margin-left: 30px;
@@ -35,6 +53,7 @@ header {
   width: 30%;
   height: 30%;
 }
+
 .bandeau .connexion img,
 .bandeau .avis img,
 .bandeau .partenaire img {
@@ -43,8 +62,83 @@ header {
   margin-right: 8px;
 }
 
+#theme-button {
+  margin-left: auto; /* Cette règle place le bouton à droite */
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Change le curseur en main quand on passe dessus */
+}
 
+#theme-button ion-icon {
+  margin-left: 5px; /* Ajoute un petit espace entre le texte et l'icône */
+}
 
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 90px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--texte);
+}
+
+p em {
+  color: #555;
+  line-height: 0.5;
+  margin-left: 10px;
+  display: flex;
+  justify-content: right;
+}
+
+.lien {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amazon a,
+.KFC a,
+.temu a {
+  display: flex;
+  flex-direction: column; /* Aligne l'image et le texte en colonne à l'intérieur de chaque lien */
+  justify-content: center; /* Centre le contenu de chaque lien */
+  align-items: center; /* Centre l'image et le texte horizontalement */
+  text-align: center; /* Centre le texte sous l'image */
+  width: 100px; /* Largeur des éléments */
+}
+
+.amazon img,
+.KFC img,
+.temu img {
+  margin-left: 70px;
+  margin-right: 10px;
+  width: 70%; /* L'image prend toute la largeur de l'élément */
+  height: auto; /* Maintient les proportions de l'image */
+  margin-bottom: 5px; /* Espacement entre l'image et le texte */
+  border-radius: 5px;
+  justify-content: center;
+  display: flex;
+}
+
+.amazon p,
+.KFC p,
+.temu p {
+  margin-left: 5px;
+  margin-right: 5px;
+  color: var(--texte);
+  font-weight: bold;
+}
+
+.amazon h1,
+.KFC h1,
+.temu h1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: var(--texte);
+  font-weight: bold;
+}
 /* Style des liens de navigation */
 .navigation a {
   position: relative;
@@ -58,7 +152,7 @@ header {
 
 /* Animation sous forme de barre sous les liens au survol */
 .navigation a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -68,7 +162,7 @@ header {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 /* Quand on survole un lien, la barre se déploie */
@@ -139,21 +233,44 @@ header {
   margin-left: 0; /* Le menu est maintenant visible à gauche */
 }
 
-
-
-
-
 .search-bar {
   text-align: center;
-  
 }
 
 .search-bar input {
   padding: 10px;
-  width: 20%;
-  backgroud : 
+  width: 50%;
   font-size: 16px;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #ccc;
   border-radius: 20px;
-  background-color: #ccc;
+}
+
+/* Barre de défilement */
+.scrollable-container {
+  width: 100%;
+  height: 300px; /* Vous pouvez ajuster la hauteur en fonction de vos besoins */
+  overflow: hidden;
+}
+
+.scrollable-content {
+  height: 90%;
+  overflow-y: auto; /* Permet l'ajout de la barre de défilement verticale */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.video-container {
+  width: 60%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Ajuste le centrage de la vidéo */
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--texte);
 }
