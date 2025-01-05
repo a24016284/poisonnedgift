@@ -1,10 +1,28 @@
+:root {
+  --fond: #fff;
+  --fond-light: #fff;
+  --fond-night: #2d2d2d;
+
+  --header-up: #368dfc;
+  --header-down: #9cf;
+  --header-up-light: #368dfc;
+  --header-down-light: #9cf;
+  --header-up-night: #fd494d;
+  --header-down-night: #9b0a0a;
+
+  --texte: #000;
+  --texte-light: #000;
+  --texte-night: #fff;
+}
+
 body {
-  background: #fff;
+  background: var(--fond);
+  overflow: hidden;
   font-family: "Nunito", sans-serif;
 }
 
 header {
-  background: linear-gradient(to bottom, #368dfc, #9cf);
+  background: linear-gradient(to bottom, var(--header-up), var(--header-down));
   padding: 10px 5px;
   width: 100%;
   position: absolute;
@@ -22,7 +40,7 @@ header {
 
 .right a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: var(--texte);
   display: inline-flex;
   align-items: center;
   margin-left: 30px;
@@ -44,19 +62,31 @@ header {
   margin-right: 8px;
 }
 
+#theme-button {
+  margin-left: auto; /* Cette règle place le bouton à droite */
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Change le curseur en main quand on passe dessus */
+}
+
+#theme-button ion-icon {
+  margin-left: 5px; /* Ajoute un petit espace entre le texte et l'icône */
+}
+
 a {
   text-decoration: none;
 }
 
 h1 {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 30px;
   text-align: center;
+  color: var(--texte);
 }
 
 p em {
   color: #555;
-  line-height: 1.6;
+  line-height: 0.5;
   margin-left: 10px;
   display: flex;
   justify-content: right;
@@ -82,9 +112,9 @@ p em {
 .amazon img,
 .KFC img,
 .temu img {
-  margin-left: 40px;
+  margin-left: 70px;
   margin-right: 10px;
-  width: 80%; /* L'image prend toute la largeur de l'élément */
+  width: 70%; /* L'image prend toute la largeur de l'élément */
   height: auto; /* Maintient les proportions de l'image */
   margin-bottom: 5px; /* Espacement entre l'image et le texte */
   border-radius: 5px;
@@ -95,22 +125,20 @@ p em {
 .amazon p,
 .KFC p,
 .temu p {
-  margin-left: 10px;
-  margin-right: 10px;
-  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: var(--texte);
   font-weight: bold;
 }
 
 .amazon h1,
 .KFC h1,
 .temu h1 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  color: rgb(0, 0, 0);
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: var(--texte);
   font-weight: bold;
 }
-
-
 /* Style des liens de navigation */
 .navigation a {
   position: relative;
@@ -124,7 +152,7 @@ p em {
 
 /* Animation sous forme de barre sous les liens au survol */
 .navigation a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -134,7 +162,7 @@ p em {
   border-radius: 5px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
 
 /* Quand on survole un lien, la barre se déploie */
@@ -204,5 +232,3 @@ p em {
 .navigation .mobile-menu {
   margin-left: 0; /* Le menu est maintenant visible à gauche */
 }
-
-
