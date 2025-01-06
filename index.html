@@ -39,7 +39,7 @@
             Connexion
           </a>
           <img
-            src="image/menu-btn.png"
+            src="image/menu.png"
             alt="menu hamburger"
             class="menu-hamburger"
           />
@@ -59,10 +59,6 @@
       </div>
     </nav>
 
-    <div class="search-bar">
-      <input type="text" placeholder="Rechercher..." id="search-input" />
-    </div>
-
     <script>
       const menuHamburger = document.querySelector(".menu-hamburger");
       const navLinks = document.querySelector(".nav-links");
@@ -77,6 +73,11 @@
         navLinks.classList.remove("mobile-menu");
       });
     </script>
+
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher..." id="search-input" />
+    </div>
+    <script type="module" src="./surprise.js"></script>
 
     <div class="video-container">
       <video controls>
