@@ -1,0 +1,333 @@
+body {
+	font-family: "Trebuchet MS", Tahoma, sans-serif;
+	}
+
+
+
+.darkmod {
+	background-color: #F0F0F0;
+}
+
+a {
+	text-decoration: none;
+  }
+
+.header {
+	background: linear-gradient(to bottom, #368dfc, #9cf);
+	padding: 10px 5px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-bottom: 20px;
+  }
+  
+  .nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+  }
+  
+  .nav-right {
+	display: flex;
+	align-items: center;
+  }
+  
+  .nav-link {
+	text-decoration: none;
+	color: #000;
+	display: inline-flex;
+	align-items: center;
+	margin-left: 30px;
+	font-weight: bold;
+  }
+  
+  .nav-icon {
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+  }
+  
+  .home-icon {
+	width: 30%;
+	height: 30%;
+  }
+  
+
+  
+.search-bar {
+	text-align: center;
+	margin-top: 95px; /* Assurez-vous qu'il y a un peu d'espace au-dessus */
+	margin-bottom: 20px; /* Ajoutez de l'espace en bas pour qu'elle ne soit pas trop proche d'autres éléments */
+	padding: 10px; /* Ajoute un peu de padding autour de la barre */
+	display: flex;
+	justify-content: center; /* Centrer la barre horizontalement */
+  }
+  
+  .search-bar input {
+	background: #fff;
+	padding: 10px 15px; /* Plus de padding pour rendre le champ plus confortable */
+	width: 100%; /* Assurez-vous que l'input prend toute la largeur du parent */
+	max-width: 500px; /* Limiter la largeur maximale pour éviter qu'elle devienne trop grande */
+	font-size: 16px;
+	border: 1px solid #285bb5;
+	border-radius: 20px;
+	color: #000;
+	box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur totale */
+  }
+
+  .video-container {
+	width: 60%;
+	max-width: 800px;
+	margin-bottom: 20px;
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%); /* Ajuste le centrage de la vidéo */
+  }
+  
+  video {
+	width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px var(--texte);
+  }
+  
+
+
+
+
+
+
+  /* Style des liens de navigation */
+.navigation a {
+	position: relative;
+	font-size: 1.1em;
+	color: #000000;
+	text-decoration: none;
+	font-weight: 500;
+	font-weight: 500;
+	margin-right: 40px; /* Ajout d'une marge interne à gauche */
+  }
+  
+  /* Animation sous forme de barre sous les liens au survol */
+  .navigation a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+	border-radius: 5px;
+	transform-origin: right;
+	transform: scaleX(0);
+	transition: transform 0.5s;
+  }
+  
+  /* Quand on survole un lien, la barre se déploie */
+  .navigation a:hover::after {
+	transform-origin: left;
+	transform: scaleX(1);
+  }
+  
+  /* Lorsqu'un lien est actif, la barre est déjà déployée */
+  .navigation a.active::after {
+	background: black;
+	transform: scaleX(1);
+	font-size: 800;
+  }
+  
+  /* Styles pour l'icône du menu hamburger (visible uniquement sur petits écrans) */
+  .menu-hamburger {
+	display: none;
+	position: absolute;
+	top: 90px;
+	left: 5px;
+	width: 50px;
+  }
+  
+  /* Style du menu de navigation (nav-links) */
+  .navigation .nav-links {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	background: rgba(255, 255, 255, 0.3);
+	border-left: 1px solid rgba(255, 255, 255, 0.3);
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	-moz-backdrop-filter: blur(10px);
+	box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.3);
+	text-align: center; /* Alignement à gauche */
+	top: 0;
+	left: 0; /* Aligner le menu à gauche */
+	padding: 5vw;
+	height: 100vh;
+	overflow: hidden;
+	margin-left: -100%; /* Le menu commence hors de l'écran à gauche */
+	transition: all 0.5s ease;
+  }
+  
+  /* Style des liens dans le menu mobile */
+  .navigation .nav-links a {
+	align-items: center;
+	top: 5vh;
+	line-height: 13vh;
+	width: fit-content;
+  }
+  
+  /* Ajustement de la position de la barre sous les liens */
+  .navigation a::after {
+	bottom: 4vh;
+  }
+  
+  /* Affichage du menu hamburger sur les petits écrans */
+  .menu-hamburger {
+	display: block;
+	z-index: 99;
+  }
+  
+  /* Classe pour le menu mobile ouvert */
+  .navigation .mobile-menu {
+	margin-left: 0; /* Le menu est maintenant visible à gauche */
+  }
+
+
+
+
+
+
+
+  
+  .lien {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 17vh;
+  }
+  
+  .amazon a,
+  .KFC a,
+  .temu a {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100px;
+  }
+  
+  .amazon img,
+  .KFC img,
+  .temu img {
+	margin-left: 70px;
+	margin-right: 10px;
+	margin-top: 5px;
+	width: 70%;
+	height: auto;
+	border-radius: 5px;
+	justify-content: center;
+	display: flex;
+  }
+  
+  .amazon p,
+  .KFC p,
+  .temu p {
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #000;
+	font-weight: bold;
+  }
+  
+  .amazon h1,
+  .KFC h1,
+  .temu h1 {
+	margin-top: 2px;
+	margin-bottom: 2px;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+  }
+  
+  
+  
+  .collaborators_info {
+	color: #555;
+	line-height: 0.5;
+	margin-left: 10px;
+	display: flex;
+	justify-content: right;
+  }
+
+  
+  .title {
+	margin-top: 90px;
+	text-align: center;
+	color: #000;
+  }
+
+
+
+
+
+
+  .image-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 130px;
+	padding-left: 100px;
+	padding-right: 100px;
+  }
+  
+  .image-row {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 10px;
+  }
+  
+  .image-link {
+	width: 250px;
+	height: 220px;
+	background-color: #dcdcdc;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	padding: 2px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+  }
+  
+  .image-link img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+  }
+
+  /* Style du bouton de retour en haut */
+#backToTop {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px; 
+    background-color: #368dfc; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; /* Curseur en forme de main lors du survol */
+    display: none; /* Le bouton est caché par défaut */
+    transition: opacity 0.3s; /* Transition pour l'animation du bouton */
+}
+
+
+#backToTop:hover {
+    background-color: #285bb5; 
+}
+
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html lang="fr">
+		<head>
+			<meta charset="utf-8">
+			<title>PG | Commentaires et avis</title>
+			<link rel="icon" type="image/x-icon" href="source/favicon.png">
+			<link rel="stylesheet" href="css/main.css">
+			<link>
+			<script></script>
+		</head>
+		<body>
+			<header class="header">
+				<nav class="nav-bar">
+				  <a href="index.html" class="nav-link home-link">
+					<img src="image/home.png" alt="Home" class="nav-icon home-icon" />
+				  </a>
+			  
+				  <div class="nav-right">
+					<a href="collaborators.html" class="nav-link partners-link">
+					  <img src="image/main.png" alt="Partners" class="nav-icon partners-icon" />Partenaire
+					</a>
+					<a href="reviews.html" class="nav-link reviews-link">
+					  <img src="image/avis.png" alt="Reviews" class="nav-icon reviews-icon" />Avis utilisateur
+					</a>
+					<a href="register.html" class="nav-link login-link">
+					  <img src="image/connexion.png" alt="Login" class="nav-icon login-icon" />Connexion
+					</a>
+				  </div>
+				</nav>
+			  </header>
+			  <img
+            src="image/Menu.png"
+            alt="menu hamburger"
+            class="menu-hamburger"
+           	/>
+
+			<nav class="navigation">
+				<div class="nav-links">
+					<a href="household.html">household</a>
+					<a href="kitchen.html">kitchen</a>
+					<a href="workplace.html">workplace</a>
+					<a href="achat4.html">Categorie4</a>
+					<a href="achat5.html">Categorie5</a>
+				</div>
+			</nav>
+
+			<script>
+				const menuHamburger = document.querySelector(".menu-hamburger");
+				const navLinks = document.querySelector(".nav-links");
+		  
+				// Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
+				menuHamburger.addEventListener("click", () => {
+				  navLinks.classList.toggle("mobile-menu");
+				});
+		  
+				// Cacher le menu lorsque la souris quitte la zone du menu
+				navLinks.addEventListener("mouseleave", () => {
+				  navLinks.classList.remove("mobile-menu");
+				});
+			</script>
+
+		</body>
+	</html>
