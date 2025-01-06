@@ -29,6 +29,7 @@ header {
   top: 0;
   left: 0;
   margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .bandeau {
@@ -73,72 +74,6 @@ header {
   margin-left: 5px; /* Ajoute un petit espace entre le texte et l'icône */
 }
 
-a {
-  text-decoration: none;
-}
-
-h1 {
-  margin-top: 90px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: var(--texte);
-}
-
-p em {
-  color: #555;
-  line-height: 0.5;
-  margin-left: 10px;
-  display: flex;
-  justify-content: right;
-}
-
-.lien {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.amazon a,
-.KFC a,
-.temu a {
-  display: flex;
-  flex-direction: column; /* Aligne l'image et le texte en colonne à l'intérieur de chaque lien */
-  justify-content: center; /* Centre le contenu de chaque lien */
-  align-items: center; /* Centre l'image et le texte horizontalement */
-  text-align: center; /* Centre le texte sous l'image */
-  width: 100px; /* Largeur des éléments */
-}
-
-.amazon img,
-.KFC img,
-.temu img {
-  margin-left: 70px;
-  margin-right: 10px;
-  width: 70%; /* L'image prend toute la largeur de l'élément */
-  height: auto; /* Maintient les proportions de l'image */
-  margin-bottom: 5px; /* Espacement entre l'image et le texte */
-  border-radius: 5px;
-  justify-content: center;
-  display: flex;
-}
-
-.amazon p,
-.KFC p,
-.temu p {
-  margin-left: 5px;
-  margin-right: 5px;
-  color: var(--texte);
-  font-weight: bold;
-}
-
-.amazon h1,
-.KFC h1,
-.temu h1 {
-  margin-top: 2px;
-  margin-bottom: 2px;
-  color: var(--texte);
-  font-weight: bold;
-}
 /* Style des liens de navigation */
 .navigation a {
   position: relative;
@@ -235,17 +170,27 @@ p em {
 
 .search-bar {
   text-align: center;
+  margin-top: 95px; /* Assurez-vous qu'il y a un peu d'espace au-dessus */
+  margin-bottom: 20px; /* Ajoutez de l'espace en bas pour qu'elle ne soit pas trop proche d'autres éléments */
+  padding: 10px; /* Ajoute un peu de padding autour de la barre */
+  display: flex;
+  justify-content: center; /* Centrer la barre horizontalement */
 }
 
 .search-bar input {
-  padding: 10px;
-  width: 50%;
+  background: var(--fond);
+  padding: 10px 15px; /* Plus de padding pour rendre le champ plus confortable */
+  width: 100%; /* Assurez-vous que l'input prend toute la largeur du parent */
+  max-width: 500px; /* Limiter la largeur maximale pour éviter qu'elle devienne trop grande */
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--header-up);
   border-radius: 20px;
+  color: var(--texte);
+  box-sizing: border-box; /* Inclure les bordures et le padding dans la largeur totale */
 }
 
 /* Barre de défilement */
+
 .scrollable-container {
   width: 100%;
   height: 300px; /* Vous pouvez ajuster la hauteur en fonction de vos besoins */
