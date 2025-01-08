@@ -16,15 +16,15 @@
     <link rel="icon" type="image/x-icon" href="source/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-      rel="stylesheet"
-      media="screen and (max-width: 360px)"
-      href="css/phone.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 360px) and (max-width: 550px)"
-      href="css/ipad.css"
-    />
+    rel="stylesheet"
+    media=" (max-width: 391px)"
+    href="css/phone.css"
+  />
+  <link
+    rel="stylesheet"
+    media=" (max-width: 1262px) and (min-width: 390px)"
+    href="css/ipad.css"
+  />
     <script src="switch.js" defer></script>
   </head>
   <body>
@@ -34,7 +34,7 @@
         <a href="index.html" class="nav-link home-link">
           <img src="image/home.png" alt="Home" class="nav-icon home-icon" />
         </a>
-        <section class="nav-right">
+        <div class="nav-right">
           <a href="collaborators.html" class="nav-link partners-link">
             <img
               src="image/main.png"
@@ -56,19 +56,19 @@
               class="nav-icon login-icon"
             />Connexion
           </a>
-        </section>
+        </div>
       </nav>
     </header>
 
     <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
 
     <nav class="navigation">
-      <section class="nav-links">
+      <div class="nav-links">
         <a href="household.html">household</a>
         <a href="kitchen.html">kitchen</a>
         <a href="workplace.html">workplace</a>
         <a href="index.html">A venir</a>
-      </section>
+      </div>
     </nav>
 
     <script>
@@ -85,15 +85,15 @@
     </script>
 
     <!-- Barre de recherche -->
-    <section class="search-bar">
+    <nav class="search-bar">
       <input type="text" placeholder="Rechercher..." id="search-input" />
-    </section>
+    </nav>
 
     <p class="paragraph-container">Top 10 des articles de la semaine</p>
 
     <!-- Meilleures ventes -->
     <main class="carousel-container">
-      <section class="scrollable-images">
+      <nav class="scrollable-images">
         <a
           href="https://www.amazon.com/BOPBISGA-Phone-Cases-Silicone-iPhone/dp/B0CHR8VG9Q?th=1"
           class="image-link premiere-image"
@@ -184,7 +184,7 @@
             alt="top10"
           />
         </a>
-      </section>
+      </nav>
       <!-- Bouton de défilement gauche -->
       <button id="scrollButtonLeft" class="scroll-button" disabled>←</button>
       <!-- Bouton de défilement droit -->
@@ -233,7 +233,7 @@
     </p>
 
     <!-- Vidéo en bas de la page -->
-    <section class="video-container">
+    <div class="video-container">
       <video controls>
         <source src="source/presentation_pg.mp4" type="video/mp4" />
         <track
@@ -244,8 +244,8 @@
           default
         />
         Votre navigateur ne supporte pas la balise vidéo.
-      </video>
-    </section>
+        </video>
+    </div>
 
     <script>
       let searchInput = document.getElementById("search-input");
