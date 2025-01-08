@@ -2,35 +2,51 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content=" LOG IN TO THE WEBSITE HERE! DO THIS SO I'LL [[Hopefully never know]] WHO YOU ARE AND TAKE YOUR ALL INFORMATION, I'LL MIGHT GIVE YOU A VISIT" />
+    <meta
+      name="description"
+      content=" LOG IN TO THE WEBSITE HERE! DO THIS SO I'LL [[Hopefully never know]] WHO YOU ARE AND TAKE YOUR ALL INFORMATION, I'LL MIGHT GIVE YOU A VISIT"
+    />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta
       name="author"
       content="Sofia Ach Akcyl Boudia--Thomas Leandro Neira"
     />
-    <title>PG | Créer un compte</title>
+    <title>PG | Commentaires et avis</title>
     <link rel="icon" type="image/x-icon" href="source/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
-     <link
-    rel="stylesheet"
-    media=" (max-width: 391px)"
-    href="css/phone.css"
-  />
-  <link
-    rel="stylesheet"
-    media=" (max-width: 1262px) and (min-width: 390px)"
-    href="css/ipad.css"
-  />
+    <link rel="stylesheet" media=" (max-width: 391px)" href="css/phone.css" />
+    <link
+      rel="stylesheet"
+      media=" (max-width: 1262px) and (min-width: 390px)"
+      href="css/ipad.css"
+    />
     <script src="switch.js" defer></script>
   </head>
+
   <body>
+    <!--Bandeau de haut de page/ navigation sur les pages-->
+    <!--Bandeau de haut de page/ navigation sur les pages-->
     <header class="header">
       <nav class="nav-bar">
+        <!--bouton d'acceuil-->
         <a href="index.html" class="nav-link home-link">
           <img src="image/home.png" alt="Home" class="nav-icon home-icon" />
         </a>
-
+        <!--autres pages-->
         <div class="nav-right">
+          <!--bouton de thèmes-->
+          <div id="theme-button">
+            <ion-icon id="theme-logo" name="moon"></ion-icon>
+          </div>
+          <script type="module" src="./PG.js"></script>
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
           <a href="collaborators.html" class="nav-link partners-link">
             <img
               src="image/main.png"
@@ -55,6 +71,8 @@
         </div>
       </nav>
     </header>
+
+    <!--menu amburger pour les pages d'articles-->
     <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
 
     <nav class="navigation">
@@ -62,8 +80,24 @@
         <a href="household.html">household</a>
         <a href="kitchen.html">kitchen</a>
         <a href="workplace.html">workplace</a>
+        <a href="index.html">A venir</a>
       </div>
     </nav>
+
+    <script>
+      const menuHamburger = document.querySelector(".menu-hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      // Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
+      menuHamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-menu");
+      });
+
+      // Cacher le menu lorsque la souris quitte la zone du menu
+      navLinks.addEventListener("mouseleave", () => {
+        navLinks.classList.remove("mobile-menu");
+      });
+    </script>
 
     <main class="form-container">
       <h1 class="form-title">CONNEXION</h1>
@@ -101,29 +135,29 @@
             >Veuillez entrer un e-mail valide.</span
           >
         </div>
-        <div class="form-field" >
-          <button  type="submit" id="submitButton" disabled>Envoyer</button>
+        <div class="form-field">
+          <button type="submit" id="submitButton" disabled>Envoyer</button>
         </div>
       </form>
     </main>
 
     <footer class="footer_info">
-      <a href="https://www.univ-amu.fr/"
+      <a href="https://www.univ-amu.fr/" target="_blank"
         ><img
           src="https://th.bing.com/th/id/OIP.W4m1oj-VV2n-b5nrUoIP4gAAAA?rs=1&pid=ImgDetMain"
           alt="amu"
       /></a>
-      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fa24016284.github.io%2Fpoisonnedgift%2Fregister.html"
+      <a href="https://example.com" target="_blank"
         ><img
-          src="https://api.wexit.fr/wp-content/uploads/2020/06/w3C-logo.jpg"
+          src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-w3c/sta-je-w3c.jpg"
           alt="W3c"
       /></a>
-      <a href="https://www.ecoindex.fr/resultat/?id=23d060e1-08a5-49c4-bf8c-adb2d9e4f57c"
+      <a href="https://example.com" target="_blank"
         ><img
           src="https://www.emeraude-creative.com/assets/webp/ecoindex-logo.webp"
           alt="ecoindex"
       /></a>
-      <a href="https://www.instagram.com/poisonnedgift/" 
+      <a href="https://www.instagram.com/poisonnedgift/" target="_blank"
         ><img
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
           alt="instagram"
@@ -171,21 +205,6 @@
         }
         window.location.href = "index.html"; // Rediriger vers index.html après l'inscription
       }
-    </script>
-
-    <script>
-      const menuHamburger = document.querySelector(".menu-hamburger");
-      const navLinks = document.querySelector(".nav-links");
-
-      // Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
-      menuHamburger.addEventListener("click", () => {
-        navLinks.classList.toggle("mobile-menu");
-      });
-
-      // Cacher le menu lorsque la souris quitte la zone du menu
-      navLinks.addEventListener("mouseleave", () => {
-        navLinks.classList.remove("mobile-menu");
-      });
     </script>
   </body>
 </html>
