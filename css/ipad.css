@@ -453,8 +453,8 @@
             background: linear-gradient(to bottom, #368dfc, #9cf);
             padding: 10px 5px;
             width: 100%;
-            position: fixed;
-            bottom: 1px;
+            position: absolute;
+            bottom: 148px;
             left: 0;
             margin-top: 5px;
             position: fixed;
@@ -525,7 +525,7 @@
         
         .open-chat {
             position: fixed;
-            bottom: 10px;
+            bottom: 150px;
             right: 20px;
             width: 150px;
             height: 150px;
