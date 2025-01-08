@@ -3,77 +3,115 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content=" ALL THE GOODIES YOU NEED FOR YOUR WORKING PLACE ARE HERE! ">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Sofia Ach Akcyl Boudia--Thomas Leandro Neira">
-  <title>PG | Objets de bureau</title>
-  <link rel="icon" type="image/x-icon" href="source/favicon.png">
-  <link rel="stylesheet" href="css/main.css">
-  <link
-    rel="stylesheet"
-    media=" (max-width: 391px)"
-    href="css/phone.css"
-  />
-  <link
-    rel="stylesheet"
-    media=" (max-width: 1262px) and (min-width: 390px)"
-    href="css/ipad.css"
-  />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Sofia Ach Akcyl Boudia--Thomas Leandro Neira"/>
+    <title>PG | Commentaires et avis</title>
+    <link rel="icon" type="image/x-icon" href="source/favicon.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media=" (max-width: 391px)" href="css/phone.css" />
+    <link rel="stylesheet" media=" (max-width: 1262px) and (min-width: 390px)" href="css/ipad.css" />
     <script src="switch.js" defer></script>
-</head>
-<body>
-  <header class="header">
-    <nav class="nav-bar">
-      <a href="index.html" class="nav-link home-link">
-        <img src="image/home.png" alt="Home" class="nav-icon home-icon" />
-      </a>
-      <div class="nav-right">
-        <a href="collaborators.html" class="nav-link partners-link">
-          <img src="image/main.png" alt="Partners" class="nav-icon partners-icon" />Partenaire
-        </a>
-        <a href="reviews.html" class="nav-link reviews-link">
-          <img src="image/avis.png" alt="Reviews" class="nav-icon reviews-icon" />Avis utilisateur
-        </a>
-        <a href="register.html" class="nav-link login-link">
-          <img src="image/connexion.png" alt="Login" class="nav-icon login-icon" />Connexion
-        </a>
-      </div>
-    </nav>
+  </head>
+
+  <body>
+    <!--Bandeau de haut de page/ navigation sur les pages-->
+ <!--Bandeau de haut de page/ navigation sur les pages-->
+ <header class="header">
+	<nav class="nav-bar">
+	  <!--bouton d'acceuil-->
+	  <a href="index.html" class="nav-link home-link">                   
+		<img src="image/home.png" alt="Home" class="nav-icon home-icon" />
+	  </a>
+	  <!--autres pages-->
+	  <div class="nav-right">
+		 <!--bouton de thèmes-->
+	<div id="theme-button">
+	  <ion-icon id="theme-logo" name="moon"></ion-icon>
+	</div>
+	<script type="module" src="./PG.js"></script>
+	<script
+	  type="module"
+	  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+	></script>
+	<script
+	  nomodule
+	  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+	></script>
+		<a href="collaborators.html" class="nav-link partners-link">
+		  <img
+			src="image/main.png"
+			alt="Partners"
+			class="nav-icon partners-icon"
+		  />Partenaire
+		</a>
+		<a href="reviews.html" class="nav-link reviews-link">
+		  <img
+			src="image/avis.png"
+			alt="Reviews"
+			class="nav-icon reviews-icon"
+		  />Avis utilisateur
+		</a>
+		<a href="register.html" class="nav-link login-link">
+		  <img
+			src="image/connexion.png"
+			alt="Login"
+			class="nav-icon login-icon"
+		  />Connexion
+		</a>
+	  </div>
+
+	</nav>
   </header>
   
-  <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
-  
-  <nav class="navigation">
-    <div class="nav-links">
-      <a href="household.html">household</a>
-      <a href="kitchen.html">kitchen</a>
-      <a href="workplace.html"  class="active">workplace</a>
-    </div>
-  </nav>
+   <!--menu amburger pour les pages d'articles-->
+   <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
+
+   <nav class="navigation">
+	 <div class="nav-links">
+	   <a href="household.html">household</a>
+	   <a href="kitchen.html">kitchen</a>
+	   <a href="workplace.html">workplace</a>
+	   <a href="index.html">A venir</a>
+	 </div>
+   </nav>
+
+   <script>
+	 const menuHamburger = document.querySelector(".menu-hamburger");
+	 const navLinks = document.querySelector(".nav-links");
+
+	 // Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
+	 menuHamburger.addEventListener("click", () => {
+	   navLinks.classList.toggle("mobile-menu");
+	 });
+
+	 // Cacher le menu lorsque la souris quitte la zone du menu
+	 navLinks.addEventListener("mouseleave", () => {
+	   navLinks.classList.remove("mobile-menu");
+	 });
+   </script>
 
   <h1 class="title">Workplace !</h1>
 
   <main class="image-container">
-	<!-- Création de la boucle pour répéter 10 fois les images avec des liens différents -->
+	<!-- Création de la boucle pour répéter  les images avec des liens différents -->
 	<nav class="image-row">
-		<!-- Image 1 -->
+
 		<a href="https://www.amazon.fr/Yctze-Porte-Stylo-Porte-crayon-Plastique-D%C3%A9coration/dp/B0CRMQCT44/ref=sr_1_25?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2W56PUXK4WTBY&dib=eyJ2IjoiMSJ9.y6VUrtpzYdDmHPwkzEcBEmXMir268RxBKjtzYr1Hr27NQuZNhnbcLiFdEyrugBXeDQtJRvrn8b4TeARaZ29GaUVhX4x1yJMS9Kw_Q2jo8cFcyCUWB9KgpnerMDS63pJqzU125gr5VG4RshsPuz5TYeemoyoiZVjVLgQFovoXrKc3kPL7cZg46lgNYwOfek7yNvsV5Xv-ogZ2CYEDEW_tF4_Hru_9w0Pa9bHsB05jdDpeYNNoo68bMdCPqszL9Uw_yCKCAuhit2tM-fke6IGcHo49wPjXUgcB8gvJJ6PWR1wbI7Q_b8Pqx_aPLzMu8Hl3tpE9PB4UjxwRDI2dz9y1lUQrn-XNKuAruS9m9b9RPbGj5CSevWpTXs-n1MBKinyLpm-nH4hjybhjIVncXt-jF1low2kBab05ZFJWxaCiUn9_Huw8ZQ-484rMNDlnQ6zE.GZzUi6YmmBSOubcG2_61mq4638kwouvQ8E6b9gq9Nv0&dib_tag=se&keywords=objet+insolite+porte+crayon+humain&nsdOptOutParam=true&qid=1734814421&sprefix=objet+insolite+porte+crayon+humain%2Caps%2C134&sr=8-25.com" class="image-link">
 			<img src="https://m.media-amazon.com/images/I/51jY4pKfZbL._AC_SL1500_.jpg" alt="Illian Death Tragic Sofia Happy Yay" />
 		</a>
-		<!-- Image 2 -->
+	
 		<a href="https://www.amazon.fr/Butt-Station-Fournitures-Bureau-Accessoires/dp/B012ATV2M8/ref=sr_1_8?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AAFXTCN4SJRQ&dib=eyJ2IjoiMSJ9.FbkpF4w92oFyauRU4TKQiDZTrCJzhENyZpcxggeRDJhV9nyKZ8IB3SsJ23SLMpkHZBPPtKbqilB0ncKtQRl0QhFTigVWuaW2Y88CbM9OvTyUmK5b_48ORInh_lg741GrNqzfLYCe_1DCQWvG7xxzuecmVRNDfg4P2t2ktO_70ag9ySxlUdnDnSW3t5ExNUS1gXLs3IeV0gTRIxuyKzhCBfPZwO7p6C5HIcqIX0CTqOECCrWmVpqyVlgDqd_SdZgpg4gsxLEBv5Sed6cnZQQv4PpH_UbZbqsEZS9Z-G7W4m0_hNeP0Ib9XSbfpp05pdN7Kl9wY8IrUKnwJoDiYrEPy-KqaVHDzguSbS2A4ebQocMv9KmQUVF89WwJPZRHRHnrPhA7IHN8AoyNc3vOWeIb8hBWRwD-NULpXFAWTvY1wM52BtqVuZaaFYzPq_cCpkFN.GzlemRa2KgCB3YGx57zKmEq9BmUp3P5RfaRWRTRSAbM&dib_tag=se&keywords=objet%2Binutile&nsdOptOutParam=true&qid=1736244737&sprefix=objet%2Binutile%2Caps%2C145&sr=8-8&th=1" class="image-link">
 			<img src="https://m.media-amazon.com/images/S/aplus-media-library-service-media/9744d932-306a-4ae4-bc00-df9c0acf71a4.__CR3,0,2672,1653_PT0_SX970_V1___.jpg" alt="Toilet Guy Stick" />
-		</a>
-		<!-- Image 3 -->
+	
 		<a href="https://www.amazon.com.mx/Junwait-sectionertidos-sonriente-decoraci%C3%B3n-computadora/dp/B0C7J5SMPK/ref=sr_1_25?__mk_es_MX=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2H058JTLWV1A6&dib=eyJ2IjoiMSJ9.xj9HwH2yGY-PtJdMDVAe4dJQZF7rFCqwhJQ_cZ4RYqauFh3LpoXVhjOtEX_VApjRjbQ8eF9BJ-juvarrlzk8NcXgDRyQHTk0Ag0zd8PiggwYMBhZH1WoBzgic2f9KeHfTVyHcCLBTJLGYXLGfPrUOjRSkrQjvWsm-utWRbYmGuoiOMW9Mk-vL5O1vjFp7iKzoEBVnDmFJqJkx1pQsrM6_aC2PskzzhgwoM_2ZsZHiFFxbUldQWYtRmXYae_QrYfDkZbXvevngOCmiefRr17pSPhxQn5Nz4qDb7ATx0yuJzzd29EwuPbkbVsFkwAYyHchVKEpsIMVQtEtSfCD1R4Pl9ef7r1DAabfLWPvrBo3hdqUTqRONlZC6VFfGWyH8LVSn4ZG9WxgeJIiDU-D0Nyn8WHheRQRR2hyxKHGWIiZt6V7nfT5rx4K5XU305WN2PFx.XCcIiV8_jQ_ltpfCbXGtDYQYMh0CieyDCKUsTX5V7r4&dib_tag=se&keywords=objet+inutiles&qid=1736245020&sprefix=objet+inutile%2Caps%2C207&sr=8-25&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b" class="image-link">
 			<img src="https://m.media-amazon.com/images/I/61FIOx7gmbL._AC_SL1500_.jpg" alt="Sofia Most Beloved Work Tool" />
 		</a>
-		<!-- Image 4 -->
+	
 		<a href="https://www.amazon.fr/dp/B0761VVFDX?tag=digitren01a-21&ascsubtag=1736246763760g3i4&geniuslink=true" class="image-link">
 			<img src="https://m.media-amazon.com/images/I/41KiRdhYfiL._AC_SL1399_.jpg" alt="Martin Nevot's Phone" />	
 		</a>
 	</nav>
 
-	<!-- Répéter le bloc de la ligne 1 pour les autres images avec des liens différents -->
 	<nav class="image-row">
 		<a href="https://www.amazon.com/dp/B08K85M9B3?tag=cheapism-20&linkCode=ogi&th=1" class="image-link">
 			<img src="https://m.media-amazon.com/images/I/81AZCqt-r7L._AC_SL1500_.jpg" alt="COME ON HUMANS, THIS IS EVOLUTION, NOT THOSE FINGERS YOU GOT" />
@@ -89,7 +127,6 @@
 		</a>
 	</nav>
 
-	<!-- Autres lignes répétées jusqu'à la 10ème -->
 	<nav class="image-row">
 		<a href="https://www.amazon.com/BOPBISGA-Phone-Cases-Silicone-iPhone/dp/B0CHR8VG9Q?th=1" class="image-link">
 			<img src="https://m.media-amazon.com/images/I/41LKp-kxlXL._AC_.jpg" alt="Axcyl's Phone Gadget" />
@@ -136,55 +173,41 @@
 	</nav>
 	</main>
 
+<!-- bouton pour retourner en haut de la page-->
+<button id="backToTop" class="backToTop_button"> <img src="https://cdn-icons-png.flaticon.com/512/151/151868.png" alt="bouton" /> </button>
 
+<script>
+	// afficher ou masquer le bouton
+	window.onscroll = function() {
+		const button = document.getElementById("backToTop");
 
-	<button id="backToTop" class="backToTop_button"> <img src="https://cdn-icons-png.flaticon.com/512/151/151868.png" alt="Image 12" /> </button>
+		if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+			button.style.display = "block"; // Afficher le bouton
+		} else {
+			button.style.display = "none"; // Cacher le bouton
+		}
+	};
 
-	<script>
-		// afficher ou masquer le bouton
-		window.onscroll = function() {
-			const button = document.getElementById("backToTop");
-
-			if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-				button.style.display = "block"; // Afficher le bouton
-			} else {
-				button.style.display = "none"; // Cacher le bouton
-			}
-		};
-
-		//  remonter en haut
-		document.getElementById("backToTop").onclick = function() {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth" // Animation fluide
-			});
-		};
-
-		const imageContainer = document.getElementById("image-container");
-
-	</script>
-	
-  	<script> // script menu amburger
-		const menuHamburger = document.querySelector(".menu-hamburger");
-		const navLinks = document.querySelector(".nav-links");
-	
-		// Afficher ou cacher le menu lorsque l'icône du hamburger est cliquée
-		menuHamburger.addEventListener("click", () => {
-		navLinks.classList.toggle("mobile-menu");
+	//  remonter en haut
+	document.getElementById("backToTop").onclick = function() {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth" // Animation fluide
 		});
-	
-		// Cacher le menu lorsque la souris quitte la zone du menu
-		navLinks.addEventListener("mouseleave", () => {
-		navLinks.classList.remove("mobile-menu");
-		});
-  </script>
+	};
+
+	const imageContainer = document.getElementById("image-container");
+
+</script>
+
+  
 
 <p class="info">
-	<em
-	  ><!-- en italique-->
-	  De nouveaux articles arrivent prochainement !!!
-	</em>
-  </p>
+<em
+  ><!-- en italique-->
+  De nouveaux articles arrivent prochainement !!!
+</em>
+</p>
 
 </body>
 </html>
