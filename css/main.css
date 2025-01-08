@@ -396,6 +396,7 @@
   }
 
   .form-title {
+    color: var(--texte);
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 60px;
@@ -492,7 +493,7 @@
     padding: 20px;
     border-radius: 15px;
     font-size: 18px;
-    color: var(--texte); /* Utilisation de la variable */
+    color: #000); /* Utilisation de la variable */
   }
 
   .message:nth-child(odd) {
