@@ -453,8 +453,8 @@
             background: linear-gradient(to bottom, #368dfc, #9cf);
             padding: 10px 5px;
             width: 100%;
-            position: absolute;
-            bottom: 148px;
+            position: fixed;
+            bottom: 1px;
             left: 0;
             margin-top: 5px;
             position: fixed;
