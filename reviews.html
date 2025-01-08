@@ -15,17 +15,16 @@
     <link rel="icon" type="image/x-icon" href="source/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
     <link
-      rel="stylesheet"
-      media="screen and (max-width: 360px)"
-      href="css/phone.css"
-    />
-    <link
-      rel="stylesheet"
-      media="screen and (min-width: 360px) and (max-width: 550px)"
-      href="css/ipad.css"
-    />
-    <link />
-    <script></script>
+    rel="stylesheet"
+    media=" (max-width: 391px)"
+    href="css/phone.css"
+  />
+  <link
+    rel="stylesheet"
+    media=" (max-width: 1262px) and (min-width: 390px)"
+    href="css/ipad.css"
+  />
+    <script src="switch.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -34,7 +33,7 @@
           <img src="image/home.png" alt="Home" class="nav-icon home-icon" />
         </a>
 
-        <section class="nav-right">
+        <div class="nav-right">
           <a href="collaborators.html" class="nav-link partners-link">
             <img
               src="image/main.png"
@@ -56,39 +55,39 @@
               class="nav-icon login-icon"
             />Connexion
           </a>
-        </section>
+        </div>
       </nav>
     </header>
     <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
 
     <nav class="navigation">
-      <section class="nav-links">
+      <div class="nav-links">
         <a href="household.html">household</a>
         <a href="kitchen.html">kitchen</a>
         <a href="workplace.html">workplace</a>
-      </section>
+      </div>
     </nav>
 
     <main class="chat-container">
-      <section class="messages">
-        <article class="message bot">
+      <div class="messages">
+        <div class="message bot">
           Je suis vraiment impressionné par la qualité des produits ! Ils
           répondent parfaitement à mes attentes et fonctionnent à
           merveille.Grâce à vous trouver un cadeau de noël était un jeu
           d'enfant, c'est encore mieux que ce que j'espérais. Je recommande
           vivement ce site !"
-        </article>
-        <article class="message bot">
+        </div>
+        <div class="message bot">
           Certaines fonctionnalités ne sont pas aussi intuitives que ce à quoi
           je m'attendais. Mais cela reste un super site. J'espère que vous
           pourrez améliorer ces points...
-        </article>
-        <article class="message bot">Magnifique site ! Joyeuses fêtes!</article>
-        <article class="message bot">
+        </div>
+        <div class="message bot">Magnifique site ! Joyeuses fêtes!</div>
+        <div class="message bot">
           J'ai découvert votre site grâce à votre partenariat avec KFC et je ne
-          suis pas déçu ! Les articles proposés sont géniaux.!
-        </article>
-      </section>
+          suis pas déçu ! Les divs proposés sont géniaux.!
+        </div>
+      </div>
       <footer class="input-container" id="chat-input" style="display: none">
         <input
           type="text"
