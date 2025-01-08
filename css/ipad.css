@@ -1,15 +1,7 @@
-	/* dans ce css : 
 
-	ligne  10 à 189 :  css commun à toutes les pages
-	ligne 190 à 283 : css index. html
-	ligne 284 à 336 : css collaborators.html
-	ligne 337 à 382 :  css pages d'articles
-	ligne 383 à 445 :  css register.html
-	ligne  446 à 530 : css reviews.html   */
+  /* commun à toutes les pages */
 
-	/* commun à toutes les pages */
-
-  @media (max-width: 1262px) and (min-width: 390px) {
+  @media (max-width: 1262px) and (min-width: 700px) {
     body {
         font-family: "Nunito", sans-serif;
         overflow-y: scroll;
@@ -191,7 +183,23 @@
                 border-radius: 5px;
                 transition: all 0.3s ease-in-out;}
     
-    
+                #theme-button {
+                  margin-left: auto; 
+                  display: flex;
+                  align-items: center;
+                  cursor: pointer; 
+                }
+                
+                #theme-button ion-icon {
+                  margin-left: 5px; 
+                }
+
+
+
+
+
+
+
     
         /* index.html */
     
@@ -564,3 +572,4 @@
             margin-left: 10px;       
             }
 }
+
