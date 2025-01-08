@@ -2,35 +2,50 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content=" ALL OUR BEST AND AMAZING SPONSORS ! THIS SPONSORS ARE THE [[Men, Women, and Children]] THAT GIVES US [[KROOMER]] TO BE HERE " />
+    <meta
+      name="description"
+      content=" ALL OUR BEST AND AMAZING SPONSORS ! THIS SPONSORS ARE THE [[Men, Women, and Children]] THAT GIVES US [[KROOMER]] TO BE HERE "
+    />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta
       name="author"
       content="Sofia Ach Akcyl Boudia--Thomas Leandro Neira"
     />
-    <title>PG | Partenaires</title>
+    <title>PG | Commentaires et avis</title>
     <link rel="icon" type="image/x-icon" href="source/favicon.png" />
     <link rel="stylesheet" href="css/main.css" />
-     <link
-    rel="stylesheet"
-    media=" (max-width: 391px)"
-    href="css/phone.css"
-  />
-  <link
-    rel="stylesheet"
-    media=" (max-width: 1262px) and (min-width: 390px)"
-    href="css/ipad.css"
-  />
+    <link rel="stylesheet" media=" (max-width: 391px)" href="css/phone.css" />
+    <link
+      rel="stylesheet"
+      media=" (max-width: 1262px) and (min-width: 390px)"
+      href="css/ipad.css"
+    />
     <script src="switch.js" defer></script>
   </head>
+
   <body>
+    <!--Bandeau de haut de page/ navigation sur les pages-->
     <header class="header">
       <nav class="nav-bar">
+        <!--bouton d'acceuil-->
         <a href="index.html" class="nav-link home-link">
           <img src="image/home.png" alt="Home" class="nav-icon home-icon" />
         </a>
-
-        <nav class="nav-right">
+        <!--autres pages-->
+        <div class="nav-right">
+          <!--bouton de thèmes-->
+          <div id="theme-button">
+            <ion-icon id="theme-logo" name="moon"></ion-icon>
+          </div>
+          <script type="module" src="./PG.js"></script>
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+          ></script>
           <a href="collaborators.html" class="nav-link partners-link">
             <img
               src="image/main.png"
@@ -52,17 +67,20 @@
               class="nav-icon login-icon"
             />Connexion
           </a>
-        </nav>
+        </div>
       </nav>
     </header>
+
+    <!--menu amburger pour les pages d'articles-->
     <img src="image/Menu.png" alt="menu hamburger" class="menu-hamburger" />
 
     <nav class="navigation">
-      <nav class="nav-links">
+      <div class="nav-links">
         <a href="household.html">household</a>
         <a href="kitchen.html">kitchen</a>
         <a href="workplace.html">workplace</a>
-      </nav>
+        <a href="index.html">A venir</a>
+      </div>
     </nav>
 
     <script>
@@ -81,7 +99,7 @@
     </script>
 
     <h1 class="title">Nos partenaires !</h1>
-
+    <!--liens des pages des collaborateurs -->
     <main class="lien">
       <a
         href="https://www.amazon.fr/ref=nav_logo"
